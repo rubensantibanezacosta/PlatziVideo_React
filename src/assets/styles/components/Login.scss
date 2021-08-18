@@ -48,6 +48,7 @@
   color: white;
   font-size: 14px;
   text-decoration: none;
+  transform: translateY(2px);
 }
 
 .login__container--remember-me a:hover {
@@ -100,17 +101,15 @@
   color: white;
 }
 
-.button {
-  background-color: rgba(255, 255, 255, 0.3);
-  border: none;
+.login__button {
+  background-color: rgba(255,255,255,0.2);
+  border: 2px solid white;
   border-radius: 25px;
   color: white;
   cursor: pointer;
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 18px;
   font-family: "Muli", sans-serif;
   height: 50px;
-  letter-spacing: 1px;
   margin: 10px 0px;
 }
 

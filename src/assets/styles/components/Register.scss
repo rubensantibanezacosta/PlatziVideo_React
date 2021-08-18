@@ -61,4 +61,16 @@
   color: white;
 }
 
+.register__button {
+  background-color: rgba(255,255,255,0.2);
+  border: 1px solid white;
+  border-radius: 25px;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: "Muli", sans-serif;
+  height: 50px;
+  margin: 10px 0px;
+}
+
 @import "../Media.scss"

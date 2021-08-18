@@ -10,7 +10,7 @@ const Register = () => (
                 <input className="register__input" type="text" placeholder="Nombre" />
                 <input className="register__input" type="text" placeholder="Correo" />
                 <input className="register__input" type="password" placeholder="Contraseña" />
-                <button className="button">Registrarme</button>
+                <button className="register__button">Registrarme</button>
             </form>
             <Link to="/Login">Iniciar sesión</Link>
             

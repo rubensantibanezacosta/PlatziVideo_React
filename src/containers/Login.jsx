@@ -11,7 +11,7 @@ const Login = () => (
             <form className="login__container--form">
                 <input className="login__input" type="text" placeholder="Correo" />
                 <input className="login__input" type="password" placeholder="Contraseña" />
-                <button className="button">Iniciar sesión</button>
+                <button className="login__button">Iniciar Sesión</button>
                 <div className="login__container--remember-me">
                     <label>
                         <input type="checkbox" id="cbox1" value="first_checkbox" />Recuérdame
