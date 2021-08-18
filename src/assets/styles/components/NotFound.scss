@@ -1,0 +1,42 @@
+.main__error {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.main__error h1 {
+  font-size: 10rem;
+  color: white;
+  margin-bottom: 0;
+  text-shadow: 20px 20px 8px rgba(0, 0, 0, 0.2);
+  animation-name: error;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  transform-style: preserve-3d;
+}
+
+@keyframes error {
+  20% {
+    transform: perspective(200px) translateZ(0);
+    text-shadow: 20px 20px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+  }
+  50% {
+    transform: perspective(200px) translateZ(30px);
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.02),
+      70px 70px 200px rgba(255, 0, 0, 0.9),
+      -70px -7 0px 200px rgba(255, 0, 0, 0.9);
+    color: red;
+  }
+  80% {
+    transform: perspective(200px) translateZ(0);
+    text-shadow: 20px 20px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+  }
+}
+.main__error p {
+  color: white;
+  font-size: 1.2rem;
+}

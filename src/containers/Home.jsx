@@ -11,15 +11,15 @@ import useInitialState from "../hooks/useInitialState";
 
 const API = "http://localhost:3000/initialState";
 
-const App = () => {
+const Home = () => {
     const initialState = useInitialState(API);
 
 
 
     return (
 
-        <div className="App">
-            <Header />
+        <>
+            
             <Search />
             {
                 initialState.mylist && initialState.mylist.length > 0 &&
@@ -59,9 +59,9 @@ const App = () => {
                     </Carousel>
                 </Categories>
             }
-            <Footer />
-        </div>
+            
+        </>
     );
 }
 
-export default App;
+export default Home;
