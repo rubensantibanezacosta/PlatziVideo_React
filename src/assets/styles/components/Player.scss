@@ -1,0 +1,31 @@
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+video:hover .Player-return {
+  display: block;
+}
+
+.Player-return {
+  position: fixed;
+  top: 5px;
+  left: 5px;
+  font-size: 12px;
+}
+
+.Player-return button {
+  text-decoration: none;
+  color: white;
+  background: rgba(255, 255, 255, .2);
+  border: 2px solid white;
+  border-radius: 25px;
+  padding: 5px 20px;
+  outline: 0;
+  cursor: pointer;
+}
