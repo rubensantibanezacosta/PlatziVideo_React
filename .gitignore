@@ -72,5 +72,5 @@ typings/
 .cache/
 yarn-error.log
 
-# Build
-dist/
+ # Build
+# dist/
