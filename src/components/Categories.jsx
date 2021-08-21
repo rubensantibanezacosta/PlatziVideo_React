@@ -1,6 +1,8 @@
 import React from "react";
-import "../assets/styles/components/Categories.scss"
 import classNames from "classnames";
+import "../assets/styles/components/Categories.scss"
+import "../assets/styles/Media.scss"
+
 
 
 
