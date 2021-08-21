@@ -9,22 +9,27 @@ export const deleteFavourite = payload => ({
     payload,
 });
 
-export const loginRequest = payload =>({
-    type:"LOGIN_REQUEST",
+export const loginRequest = payload => ({
+    type: "LOGIN_REQUEST",
     payload,
 });
 
-export const logoutRequest = payload =>({
-    type:"LOGOUT_REQUEST",
+export const logoutRequest = payload => ({
+    type: "LOGOUT_REQUEST",
     payload,
 });
 
-export const registerRequest = payload =>({
-    type:"REGISTER_REQUEST",
+export const registerRequest = payload => ({
+    type: "REGISTER_REQUEST",
     payload,
 });
 
-export const getVideoSource = payload =>({
-    type:"GET_VIDEO_SOURCE",
+export const getVideoSource = payload => ({
+    type: "GET_VIDEO_SOURCE",
+    payload,
+});
+
+export const getFoundItems = payload => ({
+    type: "GET_FOUND_ITEMS",
     payload,
 });

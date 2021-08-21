@@ -1,13 +1,41 @@
 import React from "react";
+import { connect } from "react-redux";
+import { getFoundItems } from "../actions";
 import "../assets/styles/components/Search.scss"
 
-const Search = () => (
+const Search = (props) => {
+    const { getFoundItems } = props;
+    const handleInput = (event) => {
+        console.log(event);
+        console.log(event.target.value);
+        getFoundItems(event.target.value);
+        
+        
+        
+    }
 
-    <section className="main">
-        <h2 className="main__title">¿Qué quieres ver hoy?</h2>
-        <input type="text" className="search__input" placeholder="Buscar..." />
-    </section>
+    return (
 
-)
+        <section className="main">
+            <h2 className="main__title">¿Qué quieres ver hoy?</h2>
 
-export default Search;
+            <input
+                type="text"
+                className="search__input"
+                placeholder="Buscar..."
+                onKeyUp={handleInput}
+                name="search"
+            />
+
+
+        </section>
+
+    )
+}
+
+const mapDispatchToProps = {
+    getFoundItems,
+}
+
+
+export default connect(null, mapDispatchToProps)(Search);

@@ -4,9 +4,18 @@
   }
 
   .footer {
-    align-items: flex-start;
+    align-items: flex-end;
+    justify-content: center;
     flex-direction: column;
+    margin-top: 10vh;
+    
   }
+
+  .footer a {
+    padding-left: 0;
+  }
+
+  
 
   .login__container {
     

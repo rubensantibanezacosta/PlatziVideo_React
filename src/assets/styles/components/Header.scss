@@ -1,5 +1,7 @@
 @import "../Vars.scss";
 
+
+
 .header {
     align-items: center;
     background-color: $main-color;
@@ -9,6 +11,10 @@
     justify-content: space-between;
     top: 0px;
     width: 100%;
+  }
+
+  .isLogin, .isRegister{
+    background-color: #21c08b;
   }
   
   .header__img {
@@ -51,9 +57,12 @@
     align-items: center;
     display: flex;
     cursor: pointer;
+   
   }
   
   .header__menu--profile img {
-    margin-right: 8px;
+    margin-right: 5px;
     width: 40px;
+    border-radius: 100%;
+    object-fit: cover;
   }

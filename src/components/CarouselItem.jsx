@@ -1,6 +1,5 @@
 import React from "react";
 import { connect } from "react-redux";
-import proptypes from "prop-types";
 import { setFavourite } from "../actions";
 import { deleteFavourite } from "../actions";
 import { Link } from "react-router-dom";
@@ -62,14 +61,8 @@ const CarouselItem = (props) => {
 
     )
 }
-//Validaciones de PropTypes
-CarouselItem.proptypes = {
-    cover: proptypes.string,
-    title: proptypes.string,
-    year: proptypes.number,
-    contentRating: proptypes.string,
-    duration: proptypes.string
-}
+
+
 
 const mapDispatchToProps = {
     setFavourite,
