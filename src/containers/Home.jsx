@@ -48,7 +48,7 @@ const Home = ({ mylist, trends, originals, searchResults }) => {
 
                 searchResults == -1 &&
                 
-                <Categories title="Resultados de la búsqueda... NINGUN RESULTADO">
+                <Categories isEmpty title="¡NINGUN RESULTADO!">
                 </Categories>
             
 
@@ -61,7 +61,7 @@ const Home = ({ mylist, trends, originals, searchResults }) => {
             {
 
                 /* initialState.mylist && initialState.mylist.length > 0 && */
-                (!searchResults.length > 0 && searchResults != -1) && mylist && mylist.length > 0 &&
+                (!searchResults.length > 0 || searchResults != -1) && mylist && mylist.length > 0 &&
                 <Categories title="Mi Lista">
                     <Carousel>
                         {

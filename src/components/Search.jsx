@@ -6,8 +6,7 @@ import "../assets/styles/components/Search.scss"
 const Search = (props) => {
     const { getFoundItems } = props;
     const handleInput = (event) => {
-        console.log(event);
-        console.log(event.target.value);
+        
         getFoundItems(event.target.value);
         
         

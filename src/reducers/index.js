@@ -34,28 +34,26 @@ const reducer = (state, action) => {
             }
         case "GET_FOUND_ITEMS":
             const list = [...state.originals, ...state.trends];
-            console.log(list);
+
             const found = list.filter(item => item.title.toLowerCase().includes(action.payload.toLowerCase()));
             let founded = false;
-            
-                found.length>0?founded=true:founded=false;
-            
-            console.log(founded);
-            if(!action.payload){
-                return{
+            found.length > 0 ? founded = true : founded = false;
+
+            if (!action.payload) {
+                return {
                     ...state,
-                    searchResults:[],
+                    searchResults: [],
                 }
             }
-            if(action.payload &&founded==true) {
+            if (action.payload && founded == true) {
                 return {
                     ...state,
                     searchResults: found,
                 }
-            }  if(action.payload &&founded==false) {
+            } if (action.payload && founded == false) {
                 return {
                     ...state,
-                    searchResults:-1,
+                    searchResults: -1,
                 }
             }
 
